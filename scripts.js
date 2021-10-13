@@ -1,10 +1,7 @@
-function setup(){
-  createCanvas(800,1000);
-  background('fffffff');
-}
+function setup() {
+  createCanvas(800, 1000);
+  background("fffffff");
 
-function draw(){
-  
   var colors = ["red", "green", "white", "blue", "black", "yellow"];
   var sizes = [700, 900, 400, 400];
   // strokeWeight(6);
@@ -15,15 +12,14 @@ function draw(){
   var currentWidth = random(sizes);
   var currentHeight = random(sizes);
 
-  while (y < height){
+  while (y < height) {
     x = 0;
-    while (x < width){
-      fill (random (colors));
+    while (x < width) {
+      fill(random(colors));
       strokeWeight(6);
-      rect (x, y, currentWidth, currentHeight);
+      rect(x, y, currentWidth, currentHeight);
       x = x + currentWidth;
     }
     y = y + currentHeight;
   }
-
 }
